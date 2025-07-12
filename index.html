@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">YUAN Yusi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#travel story">Travel Story</a></li>
+            </ul>
+        </div> 
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">YUAN Yusi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span> <!-- 3 span means 3 lines shown on the page-->
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#travel story">Travel Story</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/MyPhoto.jpg" alt="Yusi Profile Pic">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Yusi</h1>
+            <b class="section-text-p2">Penultimate CS student at National University of Singapore(NUS)</b>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/CV_yuanyusi.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/Linkedin.png" alt="linkedin" 
+                class="icon icon1" onclick="location.href='https://www.linkedin.com/in/yusi-yuan-649173293/'">
+                <img src="./assets/github.png" alt="github" 
+                class="icon" onclick="location.href='https://www.github.com/yyssophie'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

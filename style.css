@@ -1,0 +1,219 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+  font-family: "Cormorant", serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color:aliceblue;
+}
+
+a,.btn {
+    transition: all 300ms ease;
+}
+
+nav,.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap:2rem; /* default size is 1 rem*/
+    list-style: none; /* remove the bullet */
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration:none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+/* Hamburger Menu */
+#hamburger-nav {
+    display:none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%; /*same width as ancestor */
+    height: 2px;
+    background-color: black;
+    transition: all 1ms ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0; /* right edge of the element is aligned with the 
+    right edge of its nearest positioned ancestor. */
+    background-color: white;
+    width: fit-content; /* width is just enough to fit the content inside */
+    max-height: 0; /* collapse the element. invisible */
+    overflow: hidden;
+    transition: all 1ms ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    transition: all 1ms ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+    opacity: 1;
+}
+
+section {
+    padding-top: 2vh;
+    height: 98vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+
+/* profile */
+#profile {
+    display: flex;
+    gap: 2rem;
+}
+.section-pic-container img {
+    max-width: 100%;
+    max-height: 65vh; /* limit height to 80% of screen */
+    height: auto;
+    object-fit: contain; /* make sure it scales nicely */
+    display: block;
+    margin: auto;
+    margin-right: 25rem;
+}
+
+.section-text {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.section-text-p1 {
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.section-text-p2 {
+    color: black;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+}
+
+.icon1 {
+    transform: scale(1.3);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    border: white;
+}
